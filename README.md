@@ -1,9 +1,9 @@
-# Fishing-Bot
-A fishing bot for Crusaders Quest 
+# Fishing
+A fishing macro for Crusaders Quest 
 
 Date of creation: Feb 22, 2019 
 
-A bot for fishing in Crusader's quest using Python OpenCV and pyautogui. It shouldn't be used for overnight fishing because of pop quizes.
+A macro for fishing in Crusader's quest that uses Python OpenCV and pyautogui libraries. It doesn't work well for overnight fishing because of antibot pop quizzes. 
 
 ![Alt text](images/example.PNG?raw=true "Pic")
 

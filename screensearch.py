@@ -49,6 +49,7 @@ def search_image(image, region, precision=0.6, region_image=None):
         return [-1, -1]
     return max_loc
 
+
 """
 Continuously search image until it is found
 """
@@ -66,13 +67,18 @@ Search image in region for a certain amount of time
 """
 def timedsearch(image, duration, timesample, region, precision=0.8):
     pos = search_image(image, region, precision)
+    # swipe = search_image("images/m.png", region, 0.8, r)
     start = time.time()
     while pos[0] == -1:
         time.sleep(timesample)
         pos = search_image(image, region, precision)
+        # swipe = search_image("images/m.png", region, 0.8, r)
         if time.time() - start >= duration:
+            print("time out cannot find")
             break
+
     return pos
+
 
 if __name__ == "__main__":
     screen_record()
